@@ -16,9 +16,19 @@
 <body>
   <h1>Starting studies with DOM</h1>
   <p>Here is the result</p>
-  <div>Click Me</div>
+  <P>Learning how to use the <strong>DOM</strong> em JavaScript</P>
+  <div id="msg">Click Me</div>
   <script>
- 
+   /* 
+ var p1 = window.document.getElementsByTagName('p')[1]
+ var d = window.document.getElementById('msg')
+ d.style.background = 'green'
+ d.innerText = 'Estou aguardando....'
+ */
+// var d = window.document.getElementsByName('msg')[0]
+
+var d = window.document.querySelector('div#msg')
+d.style.background = 'blue'
   </script>
 </body>
 </html>

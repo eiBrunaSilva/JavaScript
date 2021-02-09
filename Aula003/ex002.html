@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Events</title>
+  <style>
+    div#area{
+      background: rgba(15, 185, 9, 0.808);
+      color: white;
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="area">
+    Interact.....
+  </div>
+  <script>
+    var a = window.document.getElementById('area')
+    a.addEventListener('click', click)
+    a.addEventListener('mouseenter', enter)
+    a.addEventListener('mouseout', out)
+    function click() {
+      a.innerText = 'Clicked'
+      a.style.background = 'red'
+    }
+    function enter() {
+      a.innerText = 'Came in'
+    }
+    function out() {
+      a.innerText = 'Go out'
+    }
+  </script>
+</body>
+</html>
