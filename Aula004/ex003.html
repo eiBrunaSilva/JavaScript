@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detran</title>
+</head>
+<body>
+  <h1>Fines System!</h1>
+  Car´s speed: <input type="number" name="txtspe" id="txtspe">Km/h
+  <input type="button" value="Check" onclick="calculate()">
+  <div id="res"></div>
+  <script>
+function calculate(){
+  var txts = window.document.getElementById('txtspe')
+  var res = window.document.getElementById('res')
+  var spe = Number(txts.value)
+  res.innerHTML = `<p>Your current speed is <strong>${spe}Km/h</strong</p>`
+  if(spe > 60){
+    res.innerHTML += `<p>You are <strong>FINED</strong> for speeding!`
+  }
+  res.innerHTML += `<p>Always drive with seat belts!</P>`
+}
+  </script>
+</body>
+</html>

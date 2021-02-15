@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulate</title>
+</head>
+<body>
+  <h1>Nacionality System!</h1>
+  Where are you from? <input type="text" name="txtnac" id="txtnac">
+  <input type="button" value="Check" onclick="check()">
+  <div id="res"></div>
+  <script>
+    function check(){
+      var txtn = window.document.getElementById('txtnac')
+      var res = window.document.getElementById('res')
+      if(txtn != "Brazil"){
+        res.innerHTML = '<p>Foreign!</p>'
+      }else{
+        res.innerHTML = '<p>Brazilian!</p>'
+      }
+    }
+  </script>
+</body>
+</html>
