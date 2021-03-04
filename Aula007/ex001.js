@@ -11,3 +11,7 @@ for(var c = 0; c <= num.length; c++){
 for(let c in num){
   console.log(`The position ${c} has the value ${num[c]}`)
 }
+
+let pos = num.indexOf(8)
+
+console.log(`The value 8 is in the position ${pos}`)
