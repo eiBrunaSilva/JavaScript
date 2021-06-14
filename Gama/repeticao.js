@@ -11,3 +11,17 @@ for(var i = 0; i < 100; i++){
     console.log("parabens")
   }
 }
+
+
+ var achou = false;
+var numSorteado = 7;
+var possivelValor = 10;
+
+while(!achou){
+  possivelValor +=1;
+  if(numSorteado === possivelValor){
+    achou = true;
+  }else{
+    console.log("Valor errado")
+  }
+}
